@@ -61,12 +61,12 @@ Load Browser and Page
     Set Browser Implicit Wait   ${timeout}
     Input text                  name=q          fortinet
     Press Keys                  name = q        ENTER
-    Set Browser Implicit Wait   ${timeout}s
-
-
-Select Product Tab
+    Set Browser Implicit Wait   ${timeout}
     Click Element   //H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']
     Set Browser Implicit Wait   ${timeout}
+
+Select Product Tab
+
     Mouse Over      //A[@href='/products.html'][text()='Products']
     Set Browser Implicit Wait   ${timeout}
 
