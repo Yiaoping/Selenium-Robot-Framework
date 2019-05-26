@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08ede055-6bfa-4afe-8e9d-814db237ec29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestSuites/TestSuite2.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/TestSuite2.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestSuites/TestSuite3.robot" beforeDir="false" afterPath="$PROJECT_DIR$/TestSuites/TestSuite3.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/geckodriver.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/log.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/output.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/selenium-screenshot-4.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,20 +25,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestSuites/TestSuite2.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+            <state relative-caret-position="720">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TestSuites/TestSuite3.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="291">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
               <folding>
                 <element signature="e#0#238#0" expanded="true" />
               </folding>
@@ -73,8 +64,8 @@
         <option value="$PROJECT_DIR$/testfiles/test3.robot" />
         <option value="$PROJECT_DIR$/testfiles/test2.robot" />
         <option value="$PROJECT_DIR$/testfiles/TestSuite2.robot" />
-        <option value="$PROJECT_DIR$/TestSuites/TestSuite3.robot" />
         <option value="$PROJECT_DIR$/TestSuites/TestSuite2.robot" />
+        <option value="$PROJECT_DIR$/TestSuites/TestSuite3.robot" />
       </list>
     </option>
   </component>
@@ -196,20 +187,20 @@
     <entry file="file://$PROJECT_DIR$/results/selenium-screenshot-4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestSuites/TestSuite3.robot">
+    <entry file="file://$PROJECT_DIR$/TestSuites/TestSuite2.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#238#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="720">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestSuites/TestSuite2.robot">
+    <entry file="file://$PROJECT_DIR$/TestSuites/TestSuite3.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        <state relative-caret-position="291">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#238#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

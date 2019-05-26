@@ -13,10 +13,9 @@ ${timeout}          5
 
 
 *** Test Cases ***
-
 Tc_001_Delsea Regional Case Study
-    [Documentation]     Case Study for Delsea Regional link
-    [Tags]              Resources       Case Studies
+    [Documentation]             Case Study for Delsea Regional link
+    [Tags]                      Resources       Case Studies
 
     Select Product Tab
     Click Email Security Button
@@ -25,17 +24,16 @@ Tc_001_Delsea Regional Case Study
 
 
 *** Keywords ***
-
 Load Browser and Page
     Open Browser                        ${url}          ${browser}
     Input text                          name=q          fortinet
     Press Keys                          name=q          ENTER
     Set Browser Implicit Wait           ${timeout}
-    Click Element   //H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']
+    Click Element                       //H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']
     Set Browser Implicit Wait           ${timeout}
 
 Select Product Tab
-    Mouse Over      //A[@href='/products.html'][text()='Products']
+    Mouse Over                          //A[@href='/products.html'][text()='Products']
 
 Click Email Security Button
     Set Browser Implicit Wait           ${timeout}
@@ -51,15 +49,15 @@ Accept Cookies
     Set Browser Implicit Wait           ${timeout}
 
 Click Case Studies
-    Click Element   //BUTTON[@class='vertical-tab-selector aa-forti-products-tab'][text()='Case Studies']
+    Click Element                       //BUTTON[@class='vertical-tab-selector aa-forti-products-tab'][text()='Case Studies']
     Set Browser Implicit Wait           ${timeout}
-    Click Element   (//DIV[@class='resource tall match-height resource-feature-box'])[3]
+    Click Element                       (//DIV[@class='resource tall match-height resource-feature-box'])[3]
     Set Browser Implicit Wait           ${timeout}
-    Page Should Contain     Delsea Regional School District is a public school
+    Page Should Contain                 Delsea Regional School District is a public school
 
 Teardown
     Close Browser
-    Log     Test Complete
+    Log                         Test Complete
 
 
 

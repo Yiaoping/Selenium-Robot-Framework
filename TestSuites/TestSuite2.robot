@@ -54,7 +54,6 @@ Tc_004_Solutions_SecureProductivity
 
 
 *** Keywords ***
-
 Load Browser and Page
     Open Browser                ${url}  ${browser}
     Maximize Browser Window
@@ -62,19 +61,19 @@ Load Browser and Page
     Input text                  name=q          fortinet
     Press Keys                  name = q        ENTER
     Set Browser Implicit Wait   ${timeout}
-    Click Element   //H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']
+    Click Element               //H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']
     Set Browser Implicit Wait   ${timeout}
 
 Select Product Tab
 
-    Mouse Over      //A[@href='/products.html'][text()='Products']
+    Mouse Over                  //A[@href='/products.html'][text()='Products']
     Set Browser Implicit Wait   ${timeout}
 
 Select Solutions Tab
-    Mouse Over      //A[@href='/solutions.html'][text()='Solutions']
+    Mouse Over                  //A[@href='/solutions.html'][text()='Solutions']
     Set Browser Implicit Wait   ${timeout}
 
 
 Teardown1
     Close Browser
-    Log             Completed Test Case
+    Log                         Completed Test Case
