@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190525 20:14:58.726" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/yiao/PycharmProjects/Tests/TestSuites/TestSuite2.robot" id="s1" name="TestSuite2">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Starting the web functionality tests</arg>
+</arguments>
+<msg timestamp="20190525 20:14:58.916" level="INFO">Starting the web functionality tests</msg>
+<status status="PASS" endtime="20190525 20:14:58.918" starttime="20190525 20:14:58.916"></status>
+</kw>
+<test id="s1-t1" name="Tc_001_Products_WebApplicationFirewall">
+<kw type="setup" name="Load Browser and Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190525 20:14:58.919" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<status status="FAIL" endtime="20190525 20:14:59.762" starttime="20190525 20:14:59.761"></status>
+</kw>
+<msg timestamp="20190525 20:14:59.762" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" endtime="20190525 20:14:59.763" starttime="20190525 20:14:58.919"></status>
+</kw>
+<status status="FAIL" endtime="20190525 20:14:59.763" starttime="20190525 20:14:58.919"></status>
+</kw>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Teardown1</arg>
+</arguments>
+<kw name="Teardown1">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190525 20:14:59.765" starttime="20190525 20:14:59.765"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed Test Case</arg>
+</arguments>
+<msg timestamp="20190525 20:14:59.766" level="INFO">Completed Test Case</msg>
+<status status="PASS" endtime="20190525 20:14:59.766" starttime="20190525 20:14:59.766"></status>
+</kw>
+<status status="PASS" endtime="20190525 20:14:59.766" starttime="20190525 20:14:59.765"></status>
+</kw>
+<status status="PASS" endtime="20190525 20:14:59.766" starttime="20190525 20:14:59.764"></status>
+</kw>
+<doc>Products- WebApp button</doc>
+<tags>
+<tag>Products</tag>
+</tags>
+<status status="FAIL" endtime="20190525 20:14:59.766" critical="yes" starttime="20190525 20:14:58.918">Setup failed:
+Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="Tc_002_Products_EmailSecurity">
+<doc>Products- Email Security button</doc>
+<tags>
+<tag>Email</tag>
+<tag>Products</tag>
+<tag>robot:exit</tag>
+</tags>
+<status status="FAIL" endtime="20190525 20:14:59.768" critical="yes" starttime="20190525 20:14:59.767">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="Tc_003_Solutions_SecureNetwork">
+<doc>Solutions- Secure Network Link button</doc>
+<tags>
+<tag>Network</tag>
+<tag>robot:exit</tag>
+<tag>Solutions</tag>
+</tags>
+<status status="FAIL" endtime="20190525 20:14:59.769" critical="yes" starttime="20190525 20:14:59.769">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="Tc_004_Solutions_SecureProductivity">
+<doc>Solutions- Secure Productivity button</doc>
+<tags>
+<tag>robot:exit</tag>
+<tag>Solutions</tag>
+</tags>
+<status status="FAIL" endtime="20190525 20:14:59.771" critical="yes" starttime="20190525 20:14:59.770">Test execution stopped due to a fatal error.</status>
+</test>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed the web functionality tests</arg>
+</arguments>
+<msg timestamp="20190525 20:14:59.772" level="INFO">Completed the web functionality tests</msg>
+<status status="PASS" endtime="20190525 20:14:59.772" starttime="20190525 20:14:59.772"></status>
+</kw>
+<doc>This is to test Fortinet's Website</doc>
+<status status="FAIL" endtime="20190525 20:14:59.772" starttime="20190525 20:14:58.728"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="4" pass="0">Critical Tests</stat>
+<stat fail="4" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat info="combined" fail="1" combined="NOT robot:exit" pass="0">NOT robot:exit</stat>
+<stat fail="1" pass="0">Email</stat>
+<stat fail="1" pass="0">Network</stat>
+<stat fail="2" pass="0">Products</stat>
+<stat fail="3" pass="0">robot:exit</stat>
+<stat fail="2" pass="0">Solutions</stat>
+</tag>
+<suite>
+<stat fail="4" id="s1" name="TestSuite2" pass="0">TestSuite2</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20190525 20:14:59.762" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>

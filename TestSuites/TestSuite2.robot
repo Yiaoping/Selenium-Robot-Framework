@@ -14,7 +14,7 @@ ${timeout}      5
 @{results product}      Comprehensive, High-Performance Web Application Security     Stop advanced email threats and prevent data loss
 
 *** Test Cases ***
-Products_WebApplicationFirewall
+Tc_001_Products_WebApplicationFirewall
     [Documentation]         Products- WebApp button
     [Tags]                  Products
 
@@ -23,7 +23,7 @@ Products_WebApplicationFirewall
     Page Should Contain     @{results product}[0]
 
 
-Products_EmailSecurity
+Tc_002_Products_EmailSecurity
     [Documentation]         Products- Email Security button
     [Tags]                  Products    Email
 
@@ -33,7 +33,7 @@ Products_EmailSecurity
 
 
 
-Solutions_SecureNetwork
+Tc_003_Solutions_SecureNetwork
     [Documentation]         Solutions- Secure Network Link button
     [Tags]                  Solutions   Network
 
@@ -43,7 +43,7 @@ Solutions_SecureNetwork
 
 
 
-Solutions_SecureProductivity
+Tc_004_Solutions_SecureProductivity
     [Documentation]         Solutions- Secure Productivity button
     [Tags]                  Solutions
 
@@ -71,8 +71,6 @@ Select Product Tab
     Set Browser Implicit Wait   ${timeout}
 
 Select Solutions Tab
-    Click Element   //H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']
-    Set Browser Implicit Wait   ${timeout}
     Mouse Over      //A[@href='/solutions.html'][text()='Solutions']
     Set Browser Implicit Wait   ${timeout}
 

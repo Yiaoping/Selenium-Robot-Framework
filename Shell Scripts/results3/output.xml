@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot rpa="false" generated="20190525 18:15:44.425" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<robot rpa="false" generated="20190525 20:11:48.829" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
 <suite source="/home/yiao/PycharmProjects/Tests/TestSuites/TestSuite3.robot" id="s1" name="TestSuite3">
-<test id="s1-t1" name="Delsea Regional Case Study">
+<test id="s1-t1" name="Tc_001_Delsea Regional Case Study">
 <kw type="setup" name="Load Browser and Page">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -9,8 +9,8 @@
 <arg>${url}</arg>
 <arg>${browser}</arg>
 </arguments>
-<msg timestamp="20190525 18:15:44.624" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
-<status status="PASS" endtime="20190525 18:15:51.405" starttime="20190525 18:15:44.624"></status>
+<msg timestamp="20190525 20:11:49.060" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20190525 20:11:53.978" starttime="20190525 20:11:49.060"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given ``text`` into text field identified by ``locator``.</doc>
@@ -18,8 +18,8 @@
 <arg>name=q</arg>
 <arg>fortinet</arg>
 </arguments>
-<msg timestamp="20190525 18:15:51.405" level="INFO">Typing text 'fortinet' into text field 'name=q'.</msg>
-<status status="PASS" endtime="20190525 18:15:51.509" starttime="20190525 18:15:51.405"></status>
+<msg timestamp="20190525 20:11:53.979" level="INFO">Typing text 'fortinet' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20190525 20:11:54.096" starttime="20190525 20:11:53.978"></status>
 </kw>
 <kw name="Press Keys" library="Selenium2Library">
 <doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
@@ -27,33 +27,33 @@
 <arg>name=q</arg>
 <arg>ENTER</arg>
 </arguments>
-<msg timestamp="20190525 18:15:51.510" level="INFO">Sending key(s) (u'ENTER',) to name=q element.</msg>
-<msg timestamp="20190525 18:15:51.518" level="INFO">Pressing special key ENTER to element.</msg>
-<status status="PASS" endtime="20190525 18:15:51.833" starttime="20190525 18:15:51.509"></status>
+<msg timestamp="20190525 20:11:54.098" level="INFO">Sending key(s) (u'ENTER',) to name=q element.</msg>
+<msg timestamp="20190525 20:11:54.105" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20190525 20:11:54.419" starttime="20190525 20:11:54.097"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:51.837" starttime="20190525 18:15:51.833"></status>
+<status status="PASS" endtime="20190525 20:11:54.424" starttime="20190525 20:11:54.419"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']</arg>
 </arguments>
-<msg timestamp="20190525 18:15:51.837" level="INFO">Clicking element '//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']'.</msg>
-<status status="PASS" endtime="20190525 18:15:56.156" starttime="20190525 18:15:51.837"></status>
+<msg timestamp="20190525 20:11:54.425" level="INFO">Clicking element '//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']'.</msg>
+<status status="PASS" endtime="20190525 20:11:58.790" starttime="20190525 20:11:54.425"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:56.169" starttime="20190525 18:15:56.157"></status>
+<status status="PASS" endtime="20190525 20:11:58.795" starttime="20190525 20:11:58.790"></status>
 </kw>
-<status status="PASS" endtime="20190525 18:15:56.169" starttime="20190525 18:15:44.624"></status>
+<status status="PASS" endtime="20190525 20:11:58.795" starttime="20190525 20:11:49.060"></status>
 </kw>
 <kw name="Select Product Tab">
 <kw name="Mouse Over" library="Selenium2Library">
@@ -61,10 +61,10 @@
 <arguments>
 <arg>//A[@href='/products.html'][text()='Products']</arg>
 </arguments>
-<msg timestamp="20190525 18:15:56.170" level="INFO">Simulating Mouse Over on element '//A[@href='/products.html'][text()='Products']'.</msg>
-<status status="PASS" endtime="20190525 18:15:56.569" starttime="20190525 18:15:56.170"></status>
+<msg timestamp="20190525 20:11:58.796" level="INFO">Simulating Mouse Over on element '//A[@href='/products.html'][text()='Products']'.</msg>
+<status status="PASS" endtime="20190525 20:11:59.147" starttime="20190525 20:11:58.796"></status>
 </kw>
-<status status="PASS" endtime="20190525 18:15:56.569" starttime="20190525 18:15:56.169"></status>
+<status status="PASS" endtime="20190525 20:11:59.147" starttime="20190525 20:11:58.796"></status>
 </kw>
 <kw name="Click Email Security Button">
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
@@ -72,39 +72,39 @@
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:56.587" starttime="20190525 18:15:56.570"></status>
+<status status="PASS" endtime="20190525 20:11:59.158" starttime="20190525 20:11:59.148"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>(//A[@href='/products/email-security.html'][text()='Email Security'][text()='Email Security'])[1]</arg>
 </arguments>
-<msg timestamp="20190525 18:15:56.588" level="INFO">Clicking element '(//A[@href='/products/email-security.html'][text()='Email Security'][text()='Email Security'])[1]'.</msg>
-<status status="PASS" endtime="20190525 18:15:57.985" starttime="20190525 18:15:56.587"></status>
+<msg timestamp="20190525 20:11:59.159" level="INFO">Clicking element '(//A[@href='/products/email-security.html'][text()='Email Security'][text()='Email Security'])[1]'.</msg>
+<status status="PASS" endtime="20190525 20:12:01.291" starttime="20190525 20:11:59.158"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:57.992" starttime="20190525 18:15:57.986"></status>
+<status status="PASS" endtime="20190525 20:12:01.296" starttime="20190525 20:12:01.291"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>FortiMail: Secure Email Gateway</arg>
 </arguments>
-<msg timestamp="20190525 18:15:58.059" level="INFO">Current page contains text 'FortiMail: Secure Email Gateway'.</msg>
-<status status="PASS" endtime="20190525 18:15:58.060" starttime="20190525 18:15:57.993"></status>
+<msg timestamp="20190525 20:12:01.443" level="INFO">Current page contains text 'FortiMail: Secure Email Gateway'.</msg>
+<status status="PASS" endtime="20190525 20:12:01.443" starttime="20190525 20:12:01.297"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:58.071" starttime="20190525 18:15:58.060"></status>
+<status status="PASS" endtime="20190525 20:12:01.453" starttime="20190525 20:12:01.444"></status>
 </kw>
-<status status="PASS" endtime="20190525 18:15:58.071" starttime="20190525 18:15:56.570"></status>
+<status status="PASS" endtime="20190525 20:12:01.453" starttime="20190525 20:11:59.148"></status>
 </kw>
 <kw name="Accept Cookies">
 <kw name="Click Element" library="Selenium2Library">
@@ -112,32 +112,32 @@
 <arguments>
 <arg>id=cookiescript_accept</arg>
 </arguments>
-<msg timestamp="20190525 18:15:58.072" level="INFO">Clicking element 'id=cookiescript_accept'.</msg>
-<status status="PASS" endtime="20190525 18:15:58.352" starttime="20190525 18:15:58.072"></status>
+<msg timestamp="20190525 20:12:01.455" level="INFO">Clicking element 'id=cookiescript_accept'.</msg>
+<status status="PASS" endtime="20190525 20:12:01.722" starttime="20190525 20:12:01.454"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:58.356" starttime="20190525 18:15:58.353"></status>
+<status status="PASS" endtime="20190525 20:12:01.727" starttime="20190525 20:12:01.722"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>(//SPAN[text()='Resources'][text()='Resources'])[1]</arg>
 </arguments>
-<msg timestamp="20190525 18:15:58.356" level="INFO">Clicking element '(//SPAN[text()='Resources'][text()='Resources'])[1]'.</msg>
-<status status="PASS" endtime="20190525 18:15:58.456" starttime="20190525 18:15:58.356"></status>
+<msg timestamp="20190525 20:12:01.728" level="INFO">Clicking element '(//SPAN[text()='Resources'][text()='Resources'])[1]'.</msg>
+<status status="PASS" endtime="20190525 20:12:01.837" starttime="20190525 20:12:01.727"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:58.459" starttime="20190525 18:15:58.457"></status>
+<status status="PASS" endtime="20190525 20:12:01.848" starttime="20190525 20:12:01.837"></status>
 </kw>
-<status status="PASS" endtime="20190525 18:15:58.460" starttime="20190525 18:15:58.071"></status>
+<status status="PASS" endtime="20190525 20:12:01.848" starttime="20190525 20:12:01.454"></status>
 </kw>
 <kw name="Click Case Studies">
 <kw name="Click Element" library="Selenium2Library">
@@ -145,65 +145,65 @@
 <arguments>
 <arg>//BUTTON[@class='vertical-tab-selector aa-forti-products-tab'][text()='Case Studies']</arg>
 </arguments>
-<msg timestamp="20190525 18:15:58.462" level="INFO">Clicking element '//BUTTON[@class='vertical-tab-selector aa-forti-products-tab'][text()='Case Studies']'.</msg>
-<status status="PASS" endtime="20190525 18:15:58.737" starttime="20190525 18:15:58.461"></status>
+<msg timestamp="20190525 20:12:01.851" level="INFO">Clicking element '//BUTTON[@class='vertical-tab-selector aa-forti-products-tab'][text()='Case Studies']'.</msg>
+<status status="PASS" endtime="20190525 20:12:02.163" starttime="20190525 20:12:01.851"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:58.740" starttime="20190525 18:15:58.737"></status>
+<status status="PASS" endtime="20190525 20:12:02.170" starttime="20190525 20:12:02.164"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>(//DIV[@class='resource tall match-height resource-feature-box'])[3]</arg>
 </arguments>
-<msg timestamp="20190525 18:15:58.741" level="INFO">Clicking element '(//DIV[@class='resource tall match-height resource-feature-box'])[3]'.</msg>
-<status status="PASS" endtime="20190525 18:15:59.788" starttime="20190525 18:15:58.740"></status>
+<msg timestamp="20190525 20:12:02.171" level="INFO">Clicking element '(//DIV[@class='resource tall match-height resource-feature-box'])[3]'.</msg>
+<status status="PASS" endtime="20190525 20:12:03.539" starttime="20190525 20:12:02.171"></status>
 </kw>
 <kw name="Set Browser Implicit Wait" library="Selenium2Library">
 <doc>Sets the implicit wait value used by Selenium.</doc>
 <arguments>
 <arg>${timeout}</arg>
 </arguments>
-<status status="PASS" endtime="20190525 18:15:59.811" starttime="20190525 18:15:59.788"></status>
+<status status="PASS" endtime="20190525 20:12:03.556" starttime="20190525 20:12:03.539"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Delsea Regional School District is a public school</arg>
 </arguments>
-<msg timestamp="20190525 18:15:59.851" level="INFO">Current page contains text 'Delsea Regional School District is a public school'.</msg>
-<status status="PASS" endtime="20190525 18:15:59.851" starttime="20190525 18:15:59.812"></status>
+<msg timestamp="20190525 20:12:03.621" level="INFO">Current page contains text 'Delsea Regional School District is a public school'.</msg>
+<status status="PASS" endtime="20190525 20:12:03.622" starttime="20190525 20:12:03.557"></status>
 </kw>
-<status status="PASS" endtime="20190525 18:15:59.851" starttime="20190525 18:15:58.460"></status>
+<status status="PASS" endtime="20190525 20:12:03.622" starttime="20190525 20:12:01.849"></status>
 </kw>
 <kw type="teardown" name="Teardown">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20190525 18:16:00.522" starttime="20190525 18:15:59.852"></status>
+<status status="PASS" endtime="20190525 20:12:04.416" starttime="20190525 20:12:03.624"></status>
 </kw>
 <kw name="Log" library="BuiltIn">
 <doc>Logs the given message with the given level.</doc>
 <arguments>
 <arg>Test Complete</arg>
 </arguments>
-<msg timestamp="20190525 18:16:00.522" level="INFO">Test Complete</msg>
-<status status="PASS" endtime="20190525 18:16:00.522" starttime="20190525 18:16:00.522"></status>
+<msg timestamp="20190525 20:12:04.417" level="INFO">Test Complete</msg>
+<status status="PASS" endtime="20190525 20:12:04.417" starttime="20190525 20:12:04.416"></status>
 </kw>
-<status status="PASS" endtime="20190525 18:16:00.522" starttime="20190525 18:15:59.851"></status>
+<status status="PASS" endtime="20190525 20:12:04.417" starttime="20190525 20:12:03.623"></status>
 </kw>
 <doc>Case Study for Delsea Regional link</doc>
 <tags>
 <tag>Case Studies</tag>
 <tag>Resources</tag>
 </tags>
-<status status="PASS" endtime="20190525 18:16:00.522" critical="yes" starttime="20190525 18:15:44.621"></status>
+<status status="PASS" endtime="20190525 20:12:04.417" critical="yes" starttime="20190525 20:11:49.057"></status>
 </test>
 <doc>Second Fortinet website test</doc>
-<status status="PASS" endtime="20190525 18:16:00.523" starttime="20190525 18:15:44.426"></status>
+<status status="PASS" endtime="20190525 20:12:04.418" starttime="20190525 20:11:48.831"></status>
 </suite>
 <statistics>
 <total>

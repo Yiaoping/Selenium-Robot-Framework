@@ -14,7 +14,7 @@ ${timeout}          5
 
 *** Test Cases ***
 
-Delsea Regional Case Study
+Tc_001_Delsea Regional Case Study
     [Documentation]     Case Study for Delsea Regional link
     [Tags]              Resources       Case Studies
 
@@ -22,8 +22,6 @@ Delsea Regional Case Study
     Click Email Security Button
     Accept Cookies
     Click Case Studies
-
-
 
 
 *** Keywords ***
