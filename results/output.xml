@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190525 11:11:08.883" generator="Robot 3.1.2 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/yiao/PycharmProjects/Tests/testfiles/TestSuite2.robot" id="s1" name="TestSuite2">
+<kw type="setup" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Starting the web functionality tests</arg>
+</arguments>
+<msg timestamp="20190525 11:11:09.076" level="INFO">Starting the web functionality tests</msg>
+<status status="PASS" endtime="20190525 11:11:09.078" starttime="20190525 11:11:09.076"></status>
+</kw>
+<test id="s1-t1" name="Products_WebApplicationFirewall">
+<kw type="setup" name="Load Browser and Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190525 11:11:09.080" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20190525 11:11:16.971" starttime="20190525 11:11:09.079"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190525 11:11:17.301" starttime="20190525 11:11:16.972"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:17.315" starttime="20190525 11:11:17.301"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>fortinet</arg>
+</arguments>
+<msg timestamp="20190525 11:11:17.315" level="INFO">Typing text 'fortinet' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20190525 11:11:17.431" starttime="20190525 11:11:17.315"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name = q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20190525 11:11:17.434" level="INFO">Sending key(s) (u'ENTER',) to name = q element.</msg>
+<msg timestamp="20190525 11:11:17.444" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20190525 11:11:17.778" starttime="20190525 11:11:17.431"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}s</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:17.782" starttime="20190525 11:11:17.778"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:17.783" starttime="20190525 11:11:09.079"></status>
+</kw>
+<kw name="Select Product Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']</arg>
+</arguments>
+<msg timestamp="20190525 11:11:17.794" level="INFO">Clicking element '//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']'.</msg>
+<status status="PASS" endtime="20190525 11:11:23.035" starttime="20190525 11:11:17.794"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:23.048" starttime="20190525 11:11:23.036"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/products.html'][text()='Products']</arg>
+</arguments>
+<msg timestamp="20190525 11:11:23.049" level="INFO">Simulating Mouse Over on element '//A[@href='/products.html'][text()='Products']'.</msg>
+<status status="PASS" endtime="20190525 11:11:23.467" starttime="20190525 11:11:23.049"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:23.470" starttime="20190525 11:11:23.467"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:23.470" starttime="20190525 11:11:17.790"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/products/web-application-firewall/fortiweb.html'][text()='Web Application Firewall']</arg>
+</arguments>
+<msg timestamp="20190525 11:11:23.470" level="INFO">Clicking element '//A[@href='/products/web-application-firewall/fortiweb.html'][text()='Web Application Firewall']'.</msg>
+<status status="PASS" endtime="20190525 11:11:26.279" starttime="20190525 11:11:23.470"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>@{results product}[0]</arg>
+</arguments>
+<msg timestamp="20190525 11:11:26.546" level="INFO">Current page contains text 'Comprehensive, High-Performance Web Application Security'.</msg>
+<status status="PASS" endtime="20190525 11:11:26.547" starttime="20190525 11:11:26.279"></status>
+</kw>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Teardown1</arg>
+</arguments>
+<kw name="Teardown1">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190525 11:11:27.805" starttime="20190525 11:11:26.549"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed Test Case</arg>
+</arguments>
+<msg timestamp="20190525 11:11:27.805" level="INFO">Completed Test Case</msg>
+<status status="PASS" endtime="20190525 11:11:27.805" starttime="20190525 11:11:27.805"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:27.805" starttime="20190525 11:11:26.548"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:27.805" starttime="20190525 11:11:26.547"></status>
+</kw>
+<doc>Products- WebApp button</doc>
+<tags>
+<tag>Products</tag>
+</tags>
+<status status="PASS" endtime="20190525 11:11:27.806" critical="yes" starttime="20190525 11:11:09.078"></status>
+</test>
+<test id="s1-t2" name="Products_EmailSecurity">
+<kw type="setup" name="Load Browser and Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190525 11:11:27.809" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20190525 11:11:35.608" starttime="20190525 11:11:27.808"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190525 11:11:35.918" starttime="20190525 11:11:35.609"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:35.930" starttime="20190525 11:11:35.918"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>fortinet</arg>
+</arguments>
+<msg timestamp="20190525 11:11:35.930" level="INFO">Typing text 'fortinet' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20190525 11:11:36.042" starttime="20190525 11:11:35.930"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name = q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20190525 11:11:36.043" level="INFO">Sending key(s) (u'ENTER',) to name = q element.</msg>
+<msg timestamp="20190525 11:11:36.056" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20190525 11:11:36.402" starttime="20190525 11:11:36.042"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}s</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:36.405" starttime="20190525 11:11:36.402"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:36.406" starttime="20190525 11:11:27.808"></status>
+</kw>
+<kw name="Select Product Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']</arg>
+</arguments>
+<msg timestamp="20190525 11:11:36.407" level="INFO">Clicking element '//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']'.</msg>
+<status status="PASS" endtime="20190525 11:11:41.602" starttime="20190525 11:11:36.407"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:41.638" starttime="20190525 11:11:41.602"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/products.html'][text()='Products']</arg>
+</arguments>
+<msg timestamp="20190525 11:11:41.638" level="INFO">Simulating Mouse Over on element '//A[@href='/products.html'][text()='Products']'.</msg>
+<status status="PASS" endtime="20190525 11:11:42.973" starttime="20190525 11:11:41.638"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:43.990" starttime="20190525 11:11:42.973"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:43.991" starttime="20190525 11:11:36.406"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//A[@href='/products/email-security.html'][text()='Email Security'][text()='Email Security'])[1]</arg>
+</arguments>
+<msg timestamp="20190525 11:11:43.991" level="INFO">Clicking element '(//A[@href='/products/email-security.html'][text()='Email Security'][text()='Email Security'])[1]'.</msg>
+<status status="PASS" endtime="20190525 11:11:46.421" starttime="20190525 11:11:43.991"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>@{results product}[1]</arg>
+</arguments>
+<msg timestamp="20190525 11:11:46.599" level="INFO">Current page contains text 'Stop advanced email threats and prevent data loss'.</msg>
+<status status="PASS" endtime="20190525 11:11:46.599" starttime="20190525 11:11:46.421"></status>
+</kw>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Teardown1</arg>
+</arguments>
+<kw name="Teardown1">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190525 11:11:47.936" starttime="20190525 11:11:46.606"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed Test Case</arg>
+</arguments>
+<msg timestamp="20190525 11:11:47.937" level="INFO">Completed Test Case</msg>
+<status status="PASS" endtime="20190525 11:11:47.937" starttime="20190525 11:11:47.936"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:47.937" starttime="20190525 11:11:46.601"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:47.937" starttime="20190525 11:11:46.600"></status>
+</kw>
+<doc>Products- Email Security button</doc>
+<tags>
+<tag>Email</tag>
+<tag>Products</tag>
+</tags>
+<status status="PASS" endtime="20190525 11:11:47.937" critical="yes" starttime="20190525 11:11:27.807"></status>
+</test>
+<test id="s1-t3" name="Solutions_SecureNetwork">
+<kw type="setup" name="Load Browser and Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190525 11:11:47.941" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20190525 11:11:54.812" starttime="20190525 11:11:47.940"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190525 11:11:55.138" starttime="20190525 11:11:54.813"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:55.145" starttime="20190525 11:11:55.139"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>fortinet</arg>
+</arguments>
+<msg timestamp="20190525 11:11:55.146" level="INFO">Typing text 'fortinet' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20190525 11:11:55.410" starttime="20190525 11:11:55.146"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name = q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20190525 11:11:55.411" level="INFO">Sending key(s) (u'ENTER',) to name = q element.</msg>
+<msg timestamp="20190525 11:11:55.474" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20190525 11:11:55.911" starttime="20190525 11:11:55.410"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}s</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:11:55.923" starttime="20190525 11:11:55.911"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:11:55.923" starttime="20190525 11:11:47.940"></status>
+</kw>
+<kw name="Select Solutions Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']</arg>
+</arguments>
+<msg timestamp="20190525 11:11:55.925" level="INFO">Clicking element '//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']'.</msg>
+<status status="PASS" endtime="20190525 11:12:01.511" starttime="20190525 11:11:55.924"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:12:01.518" starttime="20190525 11:12:01.512"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/solutions.html'][text()='Solutions']</arg>
+</arguments>
+<msg timestamp="20190525 11:12:01.519" level="INFO">Simulating Mouse Over on element '//A[@href='/solutions.html'][text()='Solutions']'.</msg>
+<status status="PASS" endtime="20190525 11:12:02.054" starttime="20190525 11:12:01.519"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:12:02.071" starttime="20190525 11:12:02.055"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:02.071" starttime="20190525 11:11:55.924"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/solutions/small-business/connected-utm.html'][text()='Secure Network']</arg>
+</arguments>
+<msg timestamp="20190525 11:12:02.072" level="INFO">Clicking element '//A[@href='/solutions/small-business/connected-utm.html'][text()='Secure Network']'.</msg>
+<status status="PASS" endtime="20190525 11:12:05.634" starttime="20190525 11:12:02.072"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>A Secure Network Solution for Small Businesses</arg>
+</arguments>
+<msg timestamp="20190525 11:12:05.815" level="INFO">Current page contains text 'A Secure Network Solution for Small Businesses'.</msg>
+<status status="PASS" endtime="20190525 11:12:05.815" starttime="20190525 11:12:05.634"></status>
+</kw>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Teardown1</arg>
+</arguments>
+<kw name="Teardown1">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190525 11:12:07.180" starttime="20190525 11:12:05.816"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed Test Case</arg>
+</arguments>
+<msg timestamp="20190525 11:12:07.180" level="INFO">Completed Test Case</msg>
+<status status="PASS" endtime="20190525 11:12:07.180" starttime="20190525 11:12:07.180"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:07.180" starttime="20190525 11:12:05.816"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:07.181" starttime="20190525 11:12:05.815"></status>
+</kw>
+<doc>Solutions- Secure Network Link button</doc>
+<tags>
+<tag>Network</tag>
+<tag>Solutions</tag>
+</tags>
+<status status="PASS" endtime="20190525 11:12:07.181" critical="yes" starttime="20190525 11:11:47.939"></status>
+</test>
+<test id="s1-t4" name="Solutions_SecureProductivity">
+<kw type="setup" name="Load Browser and Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20190525 11:12:07.184" level="INFO">Opening browser 'firefox' to base url 'https://google.com'.</msg>
+<status status="PASS" endtime="20190525 11:12:14.921" starttime="20190525 11:12:07.184"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190525 11:12:15.263" starttime="20190525 11:12:14.922"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:12:15.267" starttime="20190525 11:12:15.263"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>fortinet</arg>
+</arguments>
+<msg timestamp="20190525 11:12:15.267" level="INFO">Typing text 'fortinet' into text field 'name=q'.</msg>
+<status status="PASS" endtime="20190525 11:12:15.374" starttime="20190525 11:12:15.267"></status>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name = q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20190525 11:12:15.375" level="INFO">Sending key(s) (u'ENTER',) to name = q element.</msg>
+<msg timestamp="20190525 11:12:15.386" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" endtime="20190525 11:12:15.724" starttime="20190525 11:12:15.374"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}s</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:12:15.733" starttime="20190525 11:12:15.725"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:15.733" starttime="20190525 11:12:07.183"></status>
+</kw>
+<kw name="Select Solutions Tab">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']</arg>
+</arguments>
+<msg timestamp="20190525 11:12:15.734" level="INFO">Clicking element '//H3[@class='LC20lb'][text()='Fortinet | Deliver Secure Digital Transformation']'.</msg>
+<status status="PASS" endtime="20190525 11:12:21.243" starttime="20190525 11:12:15.734"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:12:21.248" starttime="20190525 11:12:21.243"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/solutions.html'][text()='Solutions']</arg>
+</arguments>
+<msg timestamp="20190525 11:12:21.248" level="INFO">Simulating Mouse Over on element '//A[@href='/solutions.html'][text()='Solutions']'.</msg>
+<status status="PASS" endtime="20190525 11:12:21.693" starttime="20190525 11:12:21.248"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="Selenium2Library">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>${timeout}</arg>
+</arguments>
+<status status="PASS" endtime="20190525 11:12:21.706" starttime="20190525 11:12:21.693"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:21.706" starttime="20190525 11:12:15.733"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//A[@href='/solutions/small-business/secure-productivity.html'][text()='Secure Productivity']</arg>
+</arguments>
+<msg timestamp="20190525 11:12:21.707" level="INFO">Clicking element '//A[@href='/solutions/small-business/secure-productivity.html'][text()='Secure Productivity']'.</msg>
+<status status="PASS" endtime="20190525 11:12:24.131" starttime="20190525 11:12:21.707"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Secure Productivity for Cloud Services</arg>
+</arguments>
+<msg timestamp="20190525 11:12:24.252" level="INFO">Current page contains text 'Secure Productivity for Cloud Services'.</msg>
+<status status="PASS" endtime="20190525 11:12:24.252" starttime="20190525 11:12:24.131"></status>
+</kw>
+<kw type="teardown" name="Run Keywords" library="BuiltIn">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>Teardown1</arg>
+</arguments>
+<kw name="Teardown1">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190525 11:12:25.343" starttime="20190525 11:12:24.253"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed Test Case</arg>
+</arguments>
+<msg timestamp="20190525 11:12:25.343" level="INFO">Completed Test Case</msg>
+<status status="PASS" endtime="20190525 11:12:25.343" starttime="20190525 11:12:25.343"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:25.344" starttime="20190525 11:12:24.253"></status>
+</kw>
+<status status="PASS" endtime="20190525 11:12:25.344" starttime="20190525 11:12:24.252"></status>
+</kw>
+<doc>Solutions- Secure Productivity button</doc>
+<tags>
+<tag>Solutions</tag>
+</tags>
+<status status="PASS" endtime="20190525 11:12:25.344" critical="yes" starttime="20190525 11:12:07.182"></status>
+</test>
+<kw type="teardown" name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Completed the web functionality tests</arg>
+</arguments>
+<msg timestamp="20190525 11:12:25.348" level="INFO">Completed the web functionality tests</msg>
+<status status="PASS" endtime="20190525 11:12:25.348" starttime="20190525 11:12:25.347"></status>
+</kw>
+<doc>This is to test Fortinet's Website</doc>
+<status status="PASS" endtime="20190525 11:12:25.348" starttime="20190525 11:11:08.884"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="4">Critical Tests</stat>
+<stat fail="0" pass="4">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Email</stat>
+<stat fail="0" pass="1">Network</stat>
+<stat fail="0" pass="2">Products</stat>
+<stat fail="0" pass="2">Solutions</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="TestSuite2" pass="4">TestSuite2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
